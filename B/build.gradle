@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+}
+dependencies {
+//    implementation 'com.google.code.gson:gson:2.8.6'
+    api project(':A')
+//    apiElements project(':A')
+//    runtimeElements project(':A')
+//    compileClasspath project(':A')
+//    runtimeClasspath project(':A')
+}
+//configurations {
+//    compile {
+//        transitive = true
+//    }
+//    api {
+//        transitive = true
+//    }
+//}
+application {
+    mainClass.set('b.B')
+    mainModule.set('B')
+}

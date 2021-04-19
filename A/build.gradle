@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+}
+
+configurations {
+    compile {
+        transitive = true
+    }
+    api {
+        transitive = true
+    }
+}
+dependencies {
+    api 'com.google.code.gson:gson:2.8.6'
+}
+application {
+    mainClass.set('a.A')
+    mainModule.set('A')
+}

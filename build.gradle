@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.0-RC'
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'application'
+
+    repositories {
+        mavenCentral()
+    }
+    java {
+        modularity.inferModulePath.set(true)
+        sourceCompatibility = JavaVersion.VERSION_16
+    }
+    if (!["A", "B", 'C'].contains(projectDir.name)) {
+        apply plugin: 'kotlin'
+    }
+}
+
+
+
+
+
+

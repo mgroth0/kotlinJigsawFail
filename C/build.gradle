@@ -1,0 +1,10 @@
+plugins {
+    id 'java-library'
+}
+dependencies {
+    api project(':B')
+}
+application {
+    mainClass.set('c.C')
+    mainModule.set('C')
+}

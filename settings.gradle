@@ -1,0 +1,8 @@
+rootProject.name = 'ABCD'
+include 'A'
+include 'B'
+include 'C'
+include 'D'
+include 'E'
+include 'F'
+include 'G'
